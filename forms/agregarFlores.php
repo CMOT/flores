@@ -113,12 +113,6 @@ if(isset($_SESSION['correo']) && $_SESSION['rol']=='admin' || $_SESSION['rol']==
                 <section class="col-lg-6">
                     <form class="form-horizontal" action="../php/insertar.php?flor=1" method="POST">
                         <div class="form-group">
-                            <label for="inputID" class="col-sm-3 control-label">Id:</label>
-                            <div class="col-sm-9">
-                                <input type="text" name="id" class="form-control" id="inputID" placeholder="Id de la flor">
-                            </div>
-                        </div>
-                        <div class="form-group">
                             <label for="inputCosto" class="col-sm-3 control-label">Costo:</label>
                             <div class="col-sm-9">
                                 <input type="text" name="costo" class="form-control" id="inputCosto" placeholder="Costo">

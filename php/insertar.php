@@ -28,11 +28,11 @@ if (isset($_GET['user'])) {
         header("location:../pages/admin/usuarios.php");
     }
 } else if ($_GET['flor']) {
-    $id= $_POST['id'];
+    
     $costo = $_POST['costo'];
     $nivel = $_POST['nivel'];
     if (!empty($costo)) {
-        $sql = "INSERT INTO flor(id_flor, costo, tipo) values ($id, $costo,$nivel)";
+        $sql = "INSERT INTO flor( costo, tipo) values ( $costo,$nivel)";
 
         $res = mysql_query($sql, $con);
         if ($res) {

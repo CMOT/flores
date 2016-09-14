@@ -148,6 +148,7 @@ if(isset($_SESSION['correo']) && $_SESSION['rol']=='admin' || $_SESSION['rol']==
                                 ?>.</h4>
                             <a href="usuariosInactivos.php"><button class="btn btn-primary">Mirar quienes son</button></a>
                         </div>
+                        
                     </div>
                 </section>
 

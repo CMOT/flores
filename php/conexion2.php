@@ -1,12 +1,12 @@
 <?php
 
 function conConexion() {
-    $servidor = "localhost";
-    $usuario = "root";
-    $clave = "";
+    $servidor = "mysql.hostinger.mx";
+    $usuario = "u529955960_cess";
+    $clave = "nesskate123";
 
     $conexionServidor = mysql_connect($servidor, $usuario, $clave);
-    mysql_select_db("baseprovicional", $conexionServidor);
+    mysql_select_db("u529955960_prod", $conexionServidor);
     return $conexionServidor;
 }
 

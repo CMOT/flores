@@ -6,9 +6,9 @@
 	define("ABSPATH", "http://".$_SERVER['SERVER_NAME']."/xxx/");
 	#Mostrar resultados MySQL
 	define("RESULTTRACE",FALSE);
-	define("MYSQL_NAME","baseprovicional");
-	define("MYSQL_USER","root");
-	define("MYSQL_PASS","");
-	define("MYSQL_HOST","localhost");
+	define("MYSQL_NAME","u529955960_prod");
+	define("MYSQL_USER","u529955960_cess");
+	define("MYSQL_PASS","nesskate123");
+	define("MYSQL_HOST","mysql.hostinger.mx");
 	define("ANALITYCS",FALSE);
 ?>			 

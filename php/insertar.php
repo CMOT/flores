@@ -16,7 +16,7 @@ if (isset($_GET['user'])) {
     $passwd = $_POST['passwd'];
     $tel = $_POST['telefono'];
     if (!empty($nombre) && !empty($tel)) {
-        $sql = "INSERT INTO usuario(nombre, ap_paterno, ap_materno, correo, password, telefono, rol) values ('$nombre','$apPat','$apMat', '$correo', '$passwd', '$tel', 'usuario')";
+        $sql = "INSERT INTO usuario(nombre, ap_paterno, ap_materno, correo, password, telefono, rol, estatus) values ('$nombre','$apPat','$apMat', '$correo', '$passwd', '$tel', 'usuario', 'Inactivo')";
 
         $res = mysql_query($sql, $con);
         if ($res) {
@@ -32,7 +32,7 @@ if (isset($_GET['user'])) {
     $costo = $_POST['costo'];
     $nivel = $_POST['nivel'];
     if (!empty($costo)) {
-        $sql = "INSERT INTO flor( costo, tipo) values ( $costo,$nivel)";
+        $sql = "INSERT INTO flor( costo, tipo, estatus) values ( $costo,$nivel, 'Activa')";
 
         $res = mysql_query($sql, $con);
         if ($res) {
@@ -79,7 +79,7 @@ if (isset($_GET['user'])) {
     if (!empty($nombre) && !empty($tel) ) {
 
         
-            $sql = "INSERT INTO usuario(nombre, ap_paterno, ap_materno, correo, password, telefono, rol) values ('$nombre','$apPat','$apMat', '$correo', '$passwd', '$tel', '$rol')";
+            $sql = "INSERT INTO usuario(nombre, ap_paterno, ap_materno, correo, password, telefono, rol, estatus) values ('$nombre','$apPat','$apMat', '$correo', '$passwd', '$tel', '$rol', 'Inactivo')";
             $res = mysql_query($sql, $con);
             if ($res) {
                 header("location:../pages/admin/usuarios.php");

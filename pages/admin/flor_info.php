@@ -127,7 +127,7 @@ if (isset($_SESSION['correo']) && $_SESSION['rol'] == 'admin' || $_SESSION['rol'
                     <div class="panel panel-default">
                         <!-- Default panel contents -->
                         <div class="panel-heading">
-                            Información del usuario
+                            Información de la flor
                         </div>
                         <div class="panel-body">
                             <h3>Datos de la flor</h3>
